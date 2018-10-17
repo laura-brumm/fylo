@@ -2,20 +2,27 @@
 
 /*  ### PRIMARY ###  */
 
+$primary--light: hsl(243, 86%, 85%);
+$primary--dark: hsl(243, 87%, 12%); 
+
+
+/*  ### SECONDARY ###  */
+
+$secondary--light: hsl(163, 95%, 43%);
+$secondary--dark: hsl(243, 58%, 33%);
 
 
 /*  ### NEUTRAL ###  */
 
-
-
+$neutral: hsl(0, 0%, 50%); 
 
 
 /*  ##### TYPOGRAPHY #####  */
 
 /* ### HEADINGS ### */
 
-$font-headings: sans-serif;
+$font-headings: 'Raleway', sans-serif;
 
 /* ### BODY ### */
 
-$font-body: sans-serif;
+$font-body: 'Open Sans', sans-serif;

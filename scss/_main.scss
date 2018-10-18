@@ -8,6 +8,71 @@ img {
   max-width: 100%;
 }
 
+.container {
+  padding: 50px;
+}
+
 
 /* HERO */
 
+.section--hero {
+  position: relative;
+
+  .background {
+    position: absolute;
+    top: -100px;
+    background-image: linear-gradient(160deg, $secondary--dark, $primary--light);
+    transform: skew(0, 5deg);
+    width: 100%;
+    bottom: 0;
+  }
+
+  .container {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login {
+    .login--btn {
+      float: left;
+      display: inline-block;
+
+    }
+  }
+
+  .split-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+
+    .content {
+      width: 66%;
+      padding: 10px;
+    }
+
+    .img {
+      width: 33%;
+      padding: 10px;
+    }
+
+    @media (max-width: 900px) {
+      flex-wrap: wrap-reverse;
+
+      .content,
+      .img {
+        width: 100%;
+      }
+
+      img {
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}

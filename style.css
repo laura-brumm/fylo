@@ -56,7 +56,8 @@ table {
 .h1 {
   color: #FFF;
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem; }
+  font-size: 2.5rem;
+  line-height: 3.25rem; }
 
 .h2 {
   color: #070439;
@@ -81,6 +82,43 @@ table {
   font-size: 0.9rem;
   font-weight: 600; }
 
+.link {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  margin: 0 5px;
+  padding: 5px 10px; }
+  .link:hover {
+    border: 1px solid #FFF;
+    border-radius: 2px; }
+
+.btn--sm {
+  font-family: "Open Sans", sans-serif;
+  background-color: #05d69b;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #05d69b;
+  border-radius: 2px;
+  margin: 0 5px;
+  padding: 5px 10px; }
+  .btn--sm:hover {
+    background-color: #FFF;
+    color: #05d69b; }
+
+.btn--lg {
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  background-color: #05d69b;
+  color: white;
+  text-decoration: none;
+  border: 1px solid #05d69b;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding: 15px 75px; }
+  .btn--lg:hover {
+    background-color: #FFF;
+    color: #05d69b; }
+
 /* UNIVERSAL */
 *, body {
   box-sizing: border-box; }
@@ -88,4 +126,45 @@ table {
 img {
   max-width: 100%; }
 
+.container {
+  padding: 50px; }
+
 /* HERO */
+.section--hero {
+  position: relative; }
+  .section--hero .background {
+    position: absolute;
+    top: -100px;
+    background-image: linear-gradient(160deg, #282385, #bbb8fa);
+    transform: skew(0, 5deg);
+    width: 100%;
+    bottom: 0; }
+  .section--hero .container {
+    z-index: 1;
+    position: relative;
+    width: 100%; }
+  .section--hero .nav {
+    display: flex;
+    justify-content: space-between; }
+  .section--hero .login .login--btn {
+    float: left;
+    display: inline-block; }
+  .section--hero .split-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px; }
+    .section--hero .split-section .content {
+      width: 66%;
+      padding: 10px; }
+    .section--hero .split-section .img {
+      width: 33%;
+      padding: 10px; }
+    @media (max-width: 900px) {
+      .section--hero .split-section {
+        flex-wrap: wrap-reverse; }
+        .section--hero .split-section .content,
+        .section--hero .split-section .img {
+          width: 100%; }
+        .section--hero .split-section img {
+          margin: 0 auto;
+          display: block; } }

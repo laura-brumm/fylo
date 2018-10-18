@@ -1,0 +1,45 @@
+.link {
+    color: $white;
+    font-family: $font-body;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+
+    &:hover {
+        border: 1px solid $white;
+        border-radius: 2px;
+    }
+}
+
+.btn--sm {
+    font-family: $font-body;
+    background-color: $secondary--light;
+    color: white;
+    text-decoration: none;
+    border: 1px solid $secondary--light;
+    border-radius: 2px;
+    margin: 0 5px;
+    padding: 5px 10px;
+
+    &:hover {
+        background-color: $white;
+        color: $secondary--light;
+    }
+}
+
+.btn--lg {
+    display: inline-block;
+    font-family: $font-body;
+    background-color: $secondary--light;
+    color: white;
+    text-decoration: none;
+    border: 1px solid $secondary--light;
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 15px 75px;
+
+    &:hover {
+        background-color: $white;
+        color: $secondary--light;
+    }
+}

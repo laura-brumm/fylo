@@ -1,0 +1,46 @@
+/*  ##### HEADINGS #####  */
+
+.h1 {
+    color: $white;
+    font: {
+        family: $font-headings;
+        size: 1.5rem;
+    }
+}
+
+.h2 {
+    color: $primary--dark;
+    font: {
+        family: $font-headings;
+        size: 1.25rem;
+    }
+}
+
+.h4 {
+    color: $primary--dark;
+    font: {
+        family: $font-headings;
+        size: 1rem;
+    }
+}
+
+
+/*  ##### BODY #####  */
+
+.p {
+    color: $neutral;
+    font: {
+        family: $font-body;
+        size: 0.9rem;
+        weight: 400;
+    }
+}
+
+.note {
+    color: $secondary--dark;
+    font: {
+        family: $font-body;
+        size: 0.9rem;
+        weight: 600;
+    }
+}

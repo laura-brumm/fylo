@@ -52,8 +52,40 @@ table {
 /*  ##### TYPOGRAPHY #####  */
 /* ### HEADINGS ### */
 /* ### BODY ### */
+/*  ##### HEADINGS #####  */
+.h1 {
+  color: #FFF;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem; }
+
+.h2 {
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem; }
+
+.h4 {
+  color: #070439;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem; }
+
+/*  ##### BODY #####  */
+.p {
+  color: gray;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400; }
+
+.note {
+  color: #282385;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600; }
+
+/* UNIVERSAL */
 *, body {
   box-sizing: border-box; }
 
 img {
   max-width: 100%; }
+
+/* HERO */

@@ -27,6 +27,23 @@
     }
 }
 
+.btn--md {
+    font-family: $font-body;
+    font-size: 1rem;
+    background-color: $secondary--light;
+    color: white;
+    text-decoration: none;
+    border: 1px solid $secondary--light;
+    border-radius: 2px;
+    margin: 0 5px;
+    padding: 5px 50px;
+
+    &:hover {
+        background-color: $white;
+        color: $secondary--light;
+    }
+}
+
 .btn--lg {
     display: inline-block;
     font-family: $font-body;

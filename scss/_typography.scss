@@ -7,6 +7,15 @@
         size: 2.5rem;
     }
     line-height: 3.25rem;
+
+    @media (max-width: 1050px) {
+        font-size: 2rem;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
 }
 
 .h2 {
@@ -14,6 +23,11 @@
     font: {
         family: $font-headings;
         size: 1.75rem;
+    }
+
+    @media (max-width: 550px) {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
     }
 }
 

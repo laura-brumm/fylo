@@ -9,6 +9,11 @@
         border: 1px solid $white;
         border-radius: 2px;
     }
+
+    @media (max-width: 550px) {
+        padding: 2.5px 5px;
+        font-size: 0.75rem;
+    }
 }
 
 .btn--sm {
@@ -24,6 +29,11 @@
     &:hover {
         background-color: $white;
         color: $secondary--light;
+    }
+
+    @media (max-width: 550px) {
+        padding: 2.5px 5px;
+        font-size: 0.75rem;
     }
 }
 
@@ -42,6 +52,11 @@
         background-color: $white;
         color: $secondary--light;
     }
+
+    @media (max-width: 550px) {
+        padding: 2.5px 25px;
+        font-size: 0.9rem;
+    }
 }
 
 .btn--lg {
@@ -58,5 +73,9 @@
     &:hover {
         background-color: $white;
         color: $secondary--light;
+    }
+
+    @media (max-width: 550px) {
+        padding: 7.5px 37.5px;
     }
 }

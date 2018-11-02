@@ -58,11 +58,22 @@ table {
   font-family: "Raleway", sans-serif;
   font-size: 2.5rem;
   line-height: 3.25rem; }
+  @media (max-width: 1050px) {
+    .h1 {
+      font-size: 2rem; } }
+  @media (max-width: 550px) {
+    .h1 {
+      font-size: 1.5rem;
+      line-height: 2.25rem; } }
 
 .h2 {
   color: #070439;
   font-family: "Raleway", sans-serif;
   font-size: 1.75rem; }
+  @media (max-width: 550px) {
+    .h2 {
+      font-size: 1.25rem;
+      line-height: 1.75rem; } }
 
 .h4 {
   color: #070439;
@@ -100,6 +111,10 @@ table {
   .link:hover {
     border: 1px solid #FFF;
     border-radius: 2px; }
+  @media (max-width: 550px) {
+    .link {
+      padding: 2.5px 5px;
+      font-size: 0.75rem; } }
 
 .btn--sm {
   font-family: "Open Sans", sans-serif;
@@ -113,6 +128,10 @@ table {
   .btn--sm:hover {
     background-color: #FFF;
     color: #05d69b; }
+  @media (max-width: 550px) {
+    .btn--sm {
+      padding: 2.5px 5px;
+      font-size: 0.75rem; } }
 
 .btn--md {
   font-family: "Open Sans", sans-serif;
@@ -127,6 +146,10 @@ table {
   .btn--md:hover {
     background-color: #FFF;
     color: #05d69b; }
+  @media (max-width: 550px) {
+    .btn--md {
+      padding: 2.5px 25px;
+      font-size: 0.9rem; } }
 
 .btn--lg {
   display: inline-block;
@@ -141,6 +164,9 @@ table {
   .btn--lg:hover {
     background-color: #FFF;
     color: #05d69b; }
+  @media (max-width: 550px) {
+    .btn--lg {
+      padding: 7.5px 37.5px; } }
 
 /* UNIVERSAL */
 *, body {
@@ -151,10 +177,16 @@ img {
 
 .container {
   padding: 50px; }
+  @media (max-width: 550px) {
+    .container {
+      padding: 25px; } }
 
 .container--heading {
   padding-bottom: 50px;
   text-align: center; }
+  @media (max-width: 700px) {
+    .container--heading {
+      padding-bottom: 25px; } }
 
 /* HERO */
 .section--hero {
@@ -173,6 +205,9 @@ img {
   .section--hero .nav {
     display: flex;
     justify-content: space-between; }
+  @media (max-width: 400px) {
+    .section--hero .logo {
+      max-width: 25%; } }
   .section--hero .login .login--btn {
     float: left;
     display: inline-block; }
@@ -183,6 +218,11 @@ img {
     .section--hero .split-section .content {
       width: 66%;
       padding: 10px; }
+      @media (max-width: 900px) {
+        .section--hero .split-section .content {
+          width: 100%;
+          text-align: center;
+          margin-top: 50px; } }
     .section--hero .split-section .img {
       width: 33%;
       padding: 10px; }
@@ -199,14 +239,31 @@ img {
 /* FEATURES */
 .section--features {
   padding-top: 150px; }
+  .section--features .container--heading {
+    padding: 50px; }
+    @media (max-width: 1000px) {
+      .section--features .container--heading {
+        padding: 25px; } }
   .section--features .container--content {
     display: flex;
     justify-content: space-evenly;
     padding: 50px; }
+    @media (max-width: 1000px) {
+      .section--features .container--content {
+        flex-wrap: wrap;
+        padding: 25px; } }
+    @media (max-width: 1000px) {
+      .section--features .container--content .features--img {
+        text-align: center; } }
     .section--features .container--content .features--img,
     .section--features .container--content .features {
       width: 33%;
       padding: 50px; }
+      @media (max-width: 1000px) {
+        .section--features .container--content .features--img,
+        .section--features .container--content .features {
+          width: 100%;
+          padding: 10px; } }
 
 /* SIGNUP SECTION */
 .section--signup {
@@ -214,10 +271,19 @@ img {
   margin: 0 auto;
   text-align: center;
   padding: 50px; }
+  @media (max-width: 1000px) {
+    .section--signup {
+      width: 75%; } }
+  @media (max-width: 700px) {
+    .section--signup {
+      width: 100%; } }
   .section--signup .container--content form {
     display: flex;
     flex-grow: 1;
     justify-content: center; }
+    @media (max-width: 700px) {
+      .section--signup .container--content form {
+        flex-wrap: wrap; } }
     .section--signup .container--content form input {
       font-family: "Open Sans", sans-serif;
       font-size: 1rem;
@@ -226,6 +292,9 @@ img {
       border-radius: 2px;
       margin: 0 5px;
       padding: 5px; }
+      @media (max-width: 700px) {
+        .section--signup .container--content form input {
+          margin-bottom: 20px; } }
 
 /* FOOTER */
 .section--footer {
@@ -235,18 +304,49 @@ img {
   font-size: 0.85rem; }
   .section--footer .background {
     position: absolute;
-    bottom: -700px;
+    bottom: -500px;
     background: #070439;
     transform: skew(0, 5deg);
     width: 100%;
     top: 75px; }
+    @media (max-width: 1050px) {
+      .section--footer .background {
+        bottom: -700px; } }
+    @media (max-width: 550px) {
+      .section--footer .background {
+        bottom: -1000px; } }
+  .section--footer .blue-bottom {
+    position: relative;
+    bottom: -600px;
+    background: #070439;
+    width: 100%;
+    z-index: 1;
+    height: 200px; }
+    @media (max-width: 1050px) {
+      .section--footer .blue-bottom {
+        bottom: -800px; } }
+    @media (max-width: 550px) {
+      .section--footer .blue-bottom {
+        bottom: -1100px; } }
   .section--footer .container {
     z-index: 1;
     position: absolute;
-    bottom: -500px;
+    bottom: -300px;
     width: 100%;
     display: flex;
     justify-content: space-between; }
+    @media (max-width: 1050px) {
+      .section--footer .container {
+        flex-wrap: wrap;
+        bottom: -700px; } }
+    @media (max-width: 550px) {
+      .section--footer .container {
+        bottom: -900px; } }
+  @media (max-width: 1050px) {
+    .section--footer .container--contact {
+      width: 100%;
+      margin: 50px 10px;
+      order: 1; } }
   .section--footer .container--contact .logo {
     margin-bottom: 20px; }
   .section--footer .container--contact .contact {
@@ -260,34 +360,55 @@ img {
   .section--footer .container--links {
     display: flex;
     justify-content: space-around;
-    width: 40%;
     border-right: 2px solid #FFF;
     border-left: 2px solid #FFF;
     margin: 0 20px; }
+    @media (max-width: 1050px) {
+      .section--footer .container--links {
+        width: 100%;
+        margin: 20px;
+        order: 3;
+        border: none; } }
+    @media (max-width: 550px) {
+      .section--footer .container--links {
+        flex-wrap: wrap; } }
     .section--footer .container--links .links--list {
-      padding: 0 10px; }
+      padding: 0 30px; }
+      @media (max-width: 550px) {
+        .section--footer .container--links .links--list {
+          width: 100%;
+          padding: 0;
+          margin-bottom: 20px; } }
       .section--footer .container--links .links--list li {
         line-height: 2rem; }
         .section--footer .container--links .links--list li a {
           color: #FFF;
           text-decoration: none; }
-  .section--footer .container--signup p {
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.25rem;
-    padding-bottom: 20px; }
-  .section--footer .container--signup form input,
-  .section--footer .container--signup form button {
-    display: block;
-    margin-bottom: 20px;
-    float: right; }
-  .section--footer .container--signup form input {
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
-    color: gray;
-    border: 1px solid gray;
-    border-radius: 2px;
-    padding: 5px;
-    width: 100%; }
-  .section--footer .container--signup form button {
-    margin-right: 0; }
+  .section--footer .container--signup {
+    max-width: 50%; }
+    @media (max-width: 1050px) {
+      .section--footer .container--signup {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        order: 2; } }
+    .section--footer .container--signup p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.25rem;
+      padding-bottom: 20px; }
+    .section--footer .container--signup form input,
+    .section--footer .container--signup form button {
+      display: block;
+      margin-bottom: 20px;
+      float: right; }
+    .section--footer .container--signup form input {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem;
+      color: gray;
+      border: 1px solid gray;
+      border-radius: 2px;
+      padding: 5px;
+      width: 100%; }
+    .section--footer .container--signup form button {
+      margin-right: 0; }

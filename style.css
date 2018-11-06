@@ -341,7 +341,7 @@ img {
         bottom: -700px; } }
     @media (max-width: 550px) {
       .section--footer .container {
-        bottom: -900px; } }
+        bottom: -1050px; } }
   @media (max-width: 1050px) {
     .section--footer .container--contact {
       width: 100%;
@@ -380,7 +380,8 @@ img {
           padding: 0;
           margin-bottom: 20px; } }
       .section--footer .container--links .links--list li {
-        line-height: 2rem; }
+        padding-top: 15px;
+        padding-bottom: 15px; }
         .section--footer .container--links .links--list li a {
           color: #FFF;
           text-decoration: none; }

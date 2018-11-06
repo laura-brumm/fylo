@@ -247,7 +247,7 @@ img {
     }
 
     @media (max-width: 550px) {
-      bottom: -900px;
+      bottom: -1050px;
     }
   }
 
@@ -304,7 +304,8 @@ img {
       }
 
       li {
-        line-height: 2rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
         a {
           color: $white;
